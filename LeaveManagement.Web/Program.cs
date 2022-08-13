@@ -16,8 +16,12 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<Employee>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-//
-builder.Services.AddScoped(typeof(IGenericReposityory<>), typeof(GenericRepository<>));
+//AddScoped: Scoped objects are the same within a request, but different across different requests
+//AddSingleton: tek bir tane vardir ve hep o inject edilir
+//AddTransient: Transient objects are always different; a new instance is provided to every controller and every service.
+//generic olani inject edip onu kullanabilirdik fakat custom olani kullanmak daha okunakli
+builder.Services.AddTransient(typeof(IGenericReposityory<>), typeof(GenericRepository<>));
+//custom olani kullaniyoruz, yukardakini inject etse bile constructor da almadigimiz icin gelmiyor
 builder.Services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();
 
 builder.Services.AddAutoMapper(typeof(MapperConfig));
