@@ -4,6 +4,7 @@ using LeaveManagement.Web.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LeaveManagement.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220813165116_roles")]
+    partial class roles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -106,41 +108,37 @@ namespace LeaveManagement.Web.Data.Migrations
                         {
                             Id = "e6cd6279-7294-4091-9482-dcd934b47cd1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "028b540d-24a6-46fc-a6b3-bc52dbd2da18",
+                            ConcurrencyStamp = "d85f42b1-1093-4d74-afb1-b043d6876707",
                             DateJoined = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DateOfBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "emresahin@gmail.com",
-                            EmailConfirmed = true,
+                            EmailConfirmed = false,
                             Firstname = "System",
                             Lastname = "Admin",
                             LockoutEnabled = false,
                             NormalizedEmail = "EMRESAHIN@GMAIL.COM",
-                            NormalizedUserName = "EMRESAHIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEHtfOqiTfISikCHFjaVYxo/lolMwLKccUClc4oXvHSYKtUrTodRtiQg3sE0Xq6XXcA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEO/0EpIHv4pB/YinNil/TGV/d4gCBsv1h8GOHl7DBYFhZ5ZHKwTt0KNEwrylYpDi2g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "30317b47-6aa2-4627-95de-9ce51fcab8c2",
-                            TwoFactorEnabled = false,
-                            UserName = "emresahin@gmail.com"
+                            SecurityStamp = "c4ab93b2-f553-4ad5-9aed-0485d4841d3d",
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             Id = "e7cd6279-7294-4091-9482-dcd934b47cd1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "df164850-2c07-4714-80c4-7cec2780d950",
+                            ConcurrencyStamp = "2c107d5d-56b8-48b8-badf-a38b44d638c4",
                             DateJoined = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DateOfBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "user@gmail.com",
-                            EmailConfirmed = true,
+                            EmailConfirmed = false,
                             Firstname = "System",
                             Lastname = "User",
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@GMAIL.COM",
-                            NormalizedUserName = "USER@GMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMV/uJ6X9a/NqBvLXJFyDws6Kj/5YFsSWKpDrN1czYI1cgiYU+6K5Kn5Af9uPXFv7w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGY2dPaSt6BmE3rljbOwJ5t0Sx49a3bnBEKNR1+PmHzOvHIDKEmi2RqRleuHHWoruQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "440be599-cc36-4eb2-a757-63a5ae8d0a76",
-                            TwoFactorEnabled = false,
-                            UserName = "user@gmail.com"
+                            SecurityStamp = "7b91e7ad-cc50-4575-a432-b67b7a051ac5",
+                            TwoFactorEnabled = false
                         });
                 });
 
@@ -231,14 +229,14 @@ namespace LeaveManagement.Web.Data.Migrations
                         new
                         {
                             Id = "aaaa1111-7294-4091-9482-dcd934b47cd1",
-                            ConcurrencyStamp = "5e1ee467-8314-4f4d-84c9-3e94da410054",
+                            ConcurrencyStamp = "bc26fdfb-acb5-45a7-bfbb-f137007b16c3",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
                             Id = "aaaa2222-7294-4091-9482-dcd934b47cd1",
-                            ConcurrencyStamp = "787627d3-30a4-4178-863b-96a1ab01ae59",
+                            ConcurrencyStamp = "981e832a-0e07-427b-a921-942b2ed2ee22",
                             Name = "User",
                             NormalizedName = "USER"
                         });
