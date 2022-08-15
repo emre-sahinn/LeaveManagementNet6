@@ -29,6 +29,8 @@ builder.Services.AddScoped(typeof(IGenericReposityory<>), typeof(GenericReposito
 //custom olani kullaniyoruz, yukardakini inject etse bile constructor da almadigimiz icin gelmiyor
 builder.Services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();
 
+builder.Services.AddScoped<ILeaveAllocationRepository, LeaveAllocationRepository>();
+
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 
 builder.Services.AddControllersWithViews();
