@@ -19,6 +19,9 @@ builder.Services.AddDefaultIdentity<Employee>(options => options.SignIn.RequireC
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
+//repository lere http context inject edebiliriz
+builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddTransient<IEmailSender>(s => new EmailSender("localhost", 25, "no-reply@leavemanagement.com"));
 
 //AddScoped: Scoped objects are the same within a request, but different across different requests
@@ -30,6 +33,8 @@ builder.Services.AddScoped(typeof(IGenericReposityory<>), typeof(GenericReposito
 builder.Services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();
 
 builder.Services.AddScoped<ILeaveAllocationRepository, LeaveAllocationRepository>();
+
+builder.Services.AddScoped<ILeaveRequestRepository, LeaveRequestRepository>();
 
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 
