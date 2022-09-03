@@ -1,0 +1,16 @@
+2022-09-03 22:03:47.320 +03:00 [INF] Now listening on: https://localhost:7208
+2022-09-03 22:03:47.380 +03:00 [INF] Now listening on: http://localhost:5208
+2022-09-03 22:03:47.387 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-03 22:03:47.388 +03:00 [INF] Hosting environment: Development
+2022-09-03 22:03:47.389 +03:00 [INF] Content root path: D:\GithubLocals\LeaveManagement\LeaveManagementNet6\LeaveManagement.Web\
+2022-09-03 22:03:54.237 +03:00 [INF] HTTP GET / responded 200 in 6006.8597 ms
+2022-09-03 22:03:54.362 +03:00 [INF] HTTP GET /lib/font-awesome/css/fontawesome.css responded 304 in 10.1298 ms
+2022-09-03 22:03:54.383 +03:00 [INF] HTTP GET /js/site.js responded 304 in 0.1428 ms
+2022-09-03 22:03:54.369 +03:00 [INF] HTTP GET /css/site.css responded 304 in 24.8929 ms
+2022-09-03 22:03:54.369 +03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 304 in 25.2539 ms
+2022-09-03 22:03:54.383 +03:00 [INF] HTTP GET /lib/sweetalert/sweetalert.min.js responded 304 in 0.1805 ms
+2022-09-03 22:03:54.369 +03:00 [INF] HTTP GET /lib/font-awesome/css/all.css responded 304 in 25.6743 ms
+2022-09-03 22:03:54.369 +03:00 [INF] HTTP GET /LeaveManagement.Web.styles.css responded 304 in 25.7499 ms
+2022-09-03 22:03:54.373 +03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 304 in 1.3439 ms
+2022-09-03 22:03:54.370 +03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 304 in 0.1614 ms
+2022-09-03 22:03:54.677 +03:00 [INF] HTTP GET /favicon.ico responded 304 in 0.1375 ms
